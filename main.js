@@ -1,4 +1,3 @@
-//give tables reserved or available class
 let currentTable = $(".table").click(function () {
     currentTable = $(this);
 });
@@ -9,10 +8,9 @@ $(() => {
 
     $(currentTable).click(function () {
         if (!$(this).is(".reserved")) {
-            $(".modal").show();
+            $(".modal").slideDown().show(1000);
         }
     });
-
 
     $("#submit").click(function () {
         $(currentTable).addClass("reserved");
@@ -20,10 +18,10 @@ $(() => {
 
 
     $("#submit").click(function () {
-        $(".modal").hide();
+        $(".modal").slideUp().hide(1000);
     });
 
     $("#close").click(function () {
-        $(".modal").hide();
+        $(".modal").slideUp().hide(1000);
     });
 });
