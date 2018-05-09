@@ -27,7 +27,7 @@ button{
 .table{
     border-radius: 50%;
     margin: 20px;
-    padding: 30px;
+    padding: 60px;
     border-color: black;
     background-color: #4f4f4f;
 }
@@ -57,7 +57,7 @@ input{
 
 .reserved{
     background-color:#4f4f4f33;
-    cursor: not-allowed;;
+    cursor: not-allowed;
 }
 .reserved:hover{
     background-color: #4f4f4f33;
